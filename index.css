@@ -1,3 +1,116 @@
-body{
-    background-color: aqua;
+*{
+    padding: 0;
+    margin: 0;
+    border-width: border-box;
+}
+.face {
+    height: 156px;
+    width: 156px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+nav > h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+nav > p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A9A9A9;
+}
+nav {
+    margin-top: 50px;
+    
+}
+.info {
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+}
+.block {
+    width: 100px;
+    height: 57px;
+    border-radius: 25px;
+    background-color: #E5E5E5;
+    display: block;
+    padding-top: 10px;
+    margin-top: 20px;
+}   
+.a1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #4E5150;
+}
+.a2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #BDBDBD;
+}
+main {
+    margin: 0 auto;
+    margin-top: 3%;
+    width: 60%;
+    display: grid;
+    grid-template-areas: 'a a b b b'
+                         'c c c c d'
+                         'e e f f d';
+    row-gap: 10px;
+    gap: 30px;
+}
+.i1 {grid-area: a;}
+.i2 {grid-area: b;}
+.i3 {grid-area: c;}
+.i4 {grid-area: d;}
+.i5 {grid-area: e;}
+.i6 {grid-area: f;}
+  .i1, .i5, .i6 {
+    width: 300px;
+    height: 300px;
+}
+.i2, .i3 {
+    width: 627px;
+    height: 300px;
+}
+    .i4 {
+        height: 100%;
+        width: 100%;
+    }
+img {
+    border-radius: 25px;
+    object-fit: cover;
+    width: 90%;
+}
+footer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A9A9A9;
+}
+a {
+    text-decoration: none;
+}
+
+@madia (max-width: 1200px){
+    img{
+        width: 70%;
+    }
 }
